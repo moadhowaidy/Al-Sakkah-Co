@@ -51,14 +51,15 @@ export default function Hero({ lang, onNavigate }: HeroProps) {
       <motion.div
         className="absolute inset-0 flex items-center justify-center pointer-events-none"
         initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 0.04, scale: 1 }}
+        animate={{ opacity: 0.045, scale: 1 }}
         transition={{ duration: 1.5, ease: 'easeOut' }}
       >
         <img
-          src="/images/logo.png"
+          src="/images/logo.jpg"
           alt=""
           aria-hidden="true"
-          className="w-[500px] md:w-[700px] lg:w-[900px] h-auto object-contain select-none"
+          className="w-[500px] md:w-[700px] lg:w-[900px] h-auto object-contain select-none rounded-2xl"
+          style={{ filter: 'brightness(1.2) contrast(0.9)' }}
         />
       </motion.div>
 
@@ -97,9 +98,10 @@ export default function Hero({ lang, onNavigate }: HeroProps) {
             className="mb-6"
           >
             <motion.img
-              src="/images/logo.png"
+              src="/images/logo.jpg"
               alt={isRtl ? 'شركة السكة' : 'Al Sakkah Co.'}
-              className="h-20 sm:h-24 md:h-28 w-auto object-contain mx-auto drop-shadow-[0_0px_15px_rgba(197,160,89,0.2)]"
+              className="h-20 sm:h-24 md:h-28 w-auto object-contain mx-auto rounded-xl"
+              style={{ filter: 'drop-shadow(0 0 15px rgba(197,160,89,0.2))' }}
             />
           </motion.div>
 

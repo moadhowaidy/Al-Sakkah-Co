@@ -76,9 +76,10 @@ export default function Navbar({ lang, onToggleLang, activePage, onNavigate }: N
             whileTap={{ scale: 0.97 }}
           >
             <img
-              src="/images/logo.png"
+              src="/images/logo.jpg"
               alt={lang === 'ar' ? 'شركة السكة' : 'Al Sakkah Co.'}
-              className="h-10 md:h-14 w-auto object-contain drop-shadow-[0_0px_10px_rgba(255,255,255,0.1)]"
+              className="h-12 md:h-16 lg:h-20 w-auto object-contain rounded-lg drop-shadow-[0_0px_10px_rgba(255,255,255,0.1)]"
+              style={{ filter: 'drop-shadow(0 0 8px rgba(197,160,89,0.15))' }}
             />
           </motion.button>
 

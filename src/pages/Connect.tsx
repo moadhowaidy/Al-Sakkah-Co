@@ -58,9 +58,10 @@ export default function Connect({ lang }: ConnectProps) {
           className="flex justify-center mb-8"
         >
           <motion.img
-            src="/images/logo.png"
+            src="/images/logo.jpg"
             alt={isRtl ? 'شركة السكة' : 'Al Sakkah Co.'}
-            className="h-24 sm:h-28 md:h-32 w-auto object-contain drop-shadow-[0_0px_15px_rgba(197,160,89,0.2)]"
+            className="h-24 sm:h-28 md:h-32 w-auto object-contain rounded-xl"
+            style={{ filter: 'drop-shadow(0 0 15px rgba(197,160,89,0.2))' }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           />

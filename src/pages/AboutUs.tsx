@@ -92,9 +92,10 @@ export default function AboutUs({ lang }: AboutUsProps) {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="/images/logo.png"
+                src="/images/logo.jpg"
                 alt={isRtl ? 'شركة السكة' : 'Al Sakkah Co.'}
-                className="h-20 sm:h-24 w-auto object-contain drop-shadow-[0_0px_10px_rgba(255,255,255,0.1)]"
+                className="h-20 sm:h-24 w-auto object-contain rounded-lg drop-shadow-[0_0px_10px_rgba(255,255,255,0.1)]"
+                style={{ filter: 'drop-shadow(0 0 10px rgba(197,160,89,0.18))' }}
               />
             </motion.div>
 

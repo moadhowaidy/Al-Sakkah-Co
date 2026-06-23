@@ -29,20 +29,21 @@ export default function Footer({ lang, onNavigate }: FooterProps) {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="/images/logo.png"
+                src="/images/logo.jpg"
                 alt={isRtl ? 'شركة السكة' : 'Al Sakkah Co.'}
-                className="h-24 md:h-28 w-auto object-contain drop-shadow-[0_0px_10px_rgba(255,255,255,0.1)]"
+                className="h-24 md:h-28 lg:h-32 w-auto object-contain rounded-lg drop-shadow-[0_0px_10px_rgba(255,255,255,0.1)]"
+                style={{ filter: 'drop-shadow(0 0 10px rgba(197,160,89,0.18))' }}
               />
             </motion.div>
             <p className={`text-[#A0A0A0] text-sm leading-relaxed mb-4 ${isRtl ? 'font-ar' : 'font-en'}`}>
               {t.footer.tagline}
             </p>
             <a
-              href="mailto:info@alsakkah.com"
+              href="mailto:info@emaar-furniture.com"
               className="flex items-center gap-2 text-[#A0A0A0] hover:text-[#C5A059] text-sm transition-colors duration-200"
             >
               <Mail size={14} className="text-[#C5A059] shrink-0" />
-              <span className="font-en">info@alsakkah.com</span>
+              <span className="font-en">info@emaar-furniture.com</span>
             </a>
           </div>
 
@@ -79,16 +80,16 @@ export default function Footer({ lang, onNavigate }: FooterProps) {
                   className="flex items-center gap-2 text-[#A0A0A0] hover:text-[#C5A059] text-sm transition-colors duration-200 group"
                 >
                   <MessageCircle size={14} className="text-[#C5A059] shrink-0" />
-                  <span className="font-en">+218 91 211 5922</span>
+                  <span className="font-en">+218 94 684 3270</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+218912115922"
+                  href="tel:+218946843270"
                   className="flex items-center gap-2 text-[#A0A0A0] hover:text-[#C5A059] text-sm transition-colors duration-200"
                 >
                   <Phone size={14} className="text-[#C5A059] shrink-0" />
-                  <span className="font-en">+218 91 211 5922</span>
+                  <span className="font-en">+218 94 684 3270</span>
                 </a>
               </li>
               <li className="flex items-start gap-2 text-[#A0A0A0] text-sm">

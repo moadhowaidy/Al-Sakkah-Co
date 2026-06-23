@@ -116,7 +116,7 @@ export const translations: Record<Lang, Translation> = {
     connect: {
       pageTitle: 'تواصل معنا',
       pageSubtitle: 'نحن هنا للإجابة على جميع استفساراتك',
-      phone: '+218 91 211 5922',
+      phone: '+218 94 684 3270',
       email: 'info@alsakkah.com',
       address: 'حي الأندلس، شارع الظل، طرابلس، ليبيا',
       whatsappCta: 'ابدأ محادثة واتساب',
@@ -185,7 +185,7 @@ export const translations: Record<Lang, Translation> = {
     connect: {
       pageTitle: 'Get in Touch',
       pageSubtitle: 'We\'re here to answer all your questions',
-      phone: '+218 91 211 5922',
+      phone: '+218 94 684 3270',
       email: 'info@alsakkah.com',
       address: 'Andalus District, Al-Zill Street, Tripoli, Libya',
       whatsappCta: 'Start a WhatsApp Chat',
@@ -216,7 +216,7 @@ export interface Product {
   featured?: boolean
 }
 
-export const WHATSAPP_NUMBER = '218912115922'
+export const WHATSAPP_NUMBER = '218946843270'
 
 export const products: Product[] = [
   {
