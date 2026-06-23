@@ -15,8 +15,8 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 30, filter: 'blur(6px)' },
-  visible: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] } },
-}
+  visible: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] as const } },
+} as const
 
 export default function Hero({ lang, onNavigate }: HeroProps) {
   const t = translations[lang]
