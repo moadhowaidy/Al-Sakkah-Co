@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/react'
 import { type Lang } from './data'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
@@ -90,6 +91,7 @@ export default function App() {
           <Footer lang={lang} onNavigate={handleNavigate} />
         </motion.div>
       </AnimatePresence>
+      <Analytics />
     </div>
   )
 }
